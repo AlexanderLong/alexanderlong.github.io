@@ -13,7 +13,7 @@ body {
 
 .jumbotron {
   background-image:url('http://imgur.com/EPTVI8x');
-  height: 500px;
+  /*height: 500px;*/
   background-repeat: no-repeat;
   background-size: cover;
 }
