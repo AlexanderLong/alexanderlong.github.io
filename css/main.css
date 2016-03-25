@@ -13,14 +13,14 @@ body {
 
 .jumbotron {
 	background-image:url('http://goo.gl/04j7Nn');
-  	height: 500px;
-  	background-repeat: no-repeat;
-  	background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron h1 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 .nav li{
