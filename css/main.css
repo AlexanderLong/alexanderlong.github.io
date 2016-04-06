@@ -10,6 +10,9 @@ body {
 
 /* Basic styling */
 
+.nav li{
+  color: red;
+}
 
 .jumbotron {
   background-image:url('http://i.imgur.com/gBMSfcN.jpg');
@@ -22,12 +25,5 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
-
-.nav li{
-  color: red;
-}
-
-
-
 
 
