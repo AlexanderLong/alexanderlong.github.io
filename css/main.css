@@ -3,10 +3,15 @@
 /* Padding below the footer and lighter body text */
 
 body {
+  margin-top: 40px;
   padding-bottom: 40px;
   color: #5a5a5a;
 }
 
+.general-spacer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -46,7 +51,10 @@ body {
   font-weight: normal;
 }
 
+.marketing .row {
+  margin-top: 10px;
 
+}
 
 .marketing .col-lg-4 p {
   margin-right: 10px;
@@ -54,8 +62,7 @@ body {
 }
 
 
-/* Featurettes
-------------------------- */
+/* Featurettes ------------------------- */
 
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
