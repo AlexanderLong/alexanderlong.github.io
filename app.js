@@ -25,3 +25,5 @@ var main = function() {
 
 //once webpage is loaded run main function. 
 $(document).ready(main);
+
+$('#slideshow').carousel({interval: 5000});

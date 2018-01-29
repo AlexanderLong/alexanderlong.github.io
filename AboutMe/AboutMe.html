@@ -28,53 +28,103 @@
 <!-- THE BODY -->
 <body>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://alexanderlong.github.io/index.html">Alexander Long</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active" ><a href="http://alexanderlong.github.io/AboutMe/AboutMe.html">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myCV">CV</a></li>
-        <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Some Links <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li role="separator" class="divider"></li>
-          <li class="dropdown-header">Links that I think are useful</li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">One more separated link</a></li>
-        </ul>
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-  </nav>
-  <!-- Nav Menu -->
+  <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">     </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../index.html">Home</a></li>
+            <li><a href="AboutMe/AboutMe.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Curriculum Vitae <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Awards & Conference Presentations</a></li>
+                <li><a href="#">Publications</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="images/ALongCV_shortform.pdf" download="ALongCV_shortform" >Short form CV</a></li>
+                <li><a href="images/ALongCV_shortform.pdf" download="ALongCV_shortform" >Long form CV</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful Tools <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Work in progress</a></li>
+                <li><a href="#">Put Qt widgets here.</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful Links <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.nndc.bnl.gov/">NNDC</a></li>
+                <li><a href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a></li>
+                <li><a href="http://www.jinaweb.org/">JINA-CEE</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://root.cern.ch/">ROOOOT!</a></li>
+                <li><a href="https://matplotlib.org/">MatPlotLib</a></li>
+                <li><a href="http://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 Manual</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://github.com/along4">My GitHub Page</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
 
 
-  <!-- Supporting Content -->
-  <div class="supporting">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3> Currently under construction! </h3>
-          <p> brb ya'll </p>
+  <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/XRBs.jpg" alt="Generic placeholder image">
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="page-header">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="images/XRBs.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead"></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="images/XRBs.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
 
 </body>
 
