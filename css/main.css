@@ -46,10 +46,11 @@ body {
   font-weight: normal;
 }
 
-.marketing row{
-  padding-top: 20px;
+.marketing .row {
+  padding-top: 50px;
 
 }
+
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
