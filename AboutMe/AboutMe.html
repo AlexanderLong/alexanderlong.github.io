@@ -6,29 +6,30 @@
 <!-- THE HEAD -->
 <head>
 
-  <!-- Title (What will be displayed in the tab) -->
-  <title>
-    About Alex
-  </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://imgur.com/z8i5lL0">
 
-  <!-- Using Bootstrap: Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>About Alex</title>
 
-  <!-- Getting the Font Awesome libs -->
-  <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Using google fonts: Raleway -->
-  <link rel="stylesheet" type="text/css" href="http://www.google.com/fonts#UsePlace:use/Collection:Raleway">
-
-  <!-- The Cascading Style Sheet (CSS) -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 </head>
 
 <!-- THE BODY -->
-<body>
+  <body>
 
-  <!-- Static navbar -->
+    <!--========================================================================-->
+    <!-- Jumboton Banner =======================================================-->
+    <!--========================================================================-->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -45,6 +46,8 @@
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="../AboutMe/AboutMe.html">About</a></li>
             <li><a href="#">Contact</a></li>
+            
+            <!-- CV Dropdown -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Curriculum Vitae <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -56,8 +59,10 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="images/ALongCV_shortform.pdf" download="ALongCV_shortform" >Short form CV</a></li>
                 <li><a href="images/ALongCV_shortform.pdf" download="ALongCV_shortform" >Long form CV</a></li>
-              </ul>
-            </li>
+                </ul>
+              </li>
+            
+            <!-- Useful Tools Dropdown -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful Tools <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -65,6 +70,8 @@
                 <li><a href="#">Put Qt widgets here.</a></li>
               </ul>
             </li>
+            
+            <!-- Useful Links Dropdown -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Useful Links <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -79,8 +86,7 @@
                 <li><a href="https://github.com/along4">My GitHub Page</a></li>
               </ul>
             </li>
-          </ul>
-          
+          </ul>  
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
@@ -101,17 +107,18 @@
       </div>      
     </div>
 
-  <!-- START THE FEATURETTES -->
+    <!--========================================================================-->
+    <!-- FEATURETTES ===========================================================-->
+    <!--========================================================================-->
+    <div class="container">
+      <hr class="featurette-divider">
 
-      <div class="container">
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">I am a experimental <span class="text-muted">  nuclear physist.</span></h2>
+      <!-- My story about becoming a nuclear physists -->
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">I am a experimental <span class="text-muted">  nuclear physist.</span></h2>
             <p class="lead">I first became interested in physics during my first year of undergrad at Florida State University. During an Astronomy 101 course I gradually became captivated by stars and how they generate their energy (nuclear burning). Luckily, FSU had a low energy nuclear program that studied the same nuclear reactions that power the cosmos. Before the end of that Astronomy class, I had switched majors and was ultimately set on the path I am now on. </p>
-            <p class="lead">After FSU I went on to grad school at the University of Notre Dame, where I studied and performed reseach under the guidance of Michael Weischer. 
-            </p>
+            <p class="lead">After FSU I went on to grad school at the University of Notre Dame, where I studied and performed reseach under the guidance of Michael Weischer. </p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-responsive center-block" src="images/XRBs.jpg" alt="Me At FSU">
@@ -120,6 +127,7 @@
 
         <hr class="featurette-divider">
 
+        <!-- How I got into running. -->
         <div class="row featurette">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">I like to <span class="text-muted"> run. </span></h2>
@@ -132,6 +140,7 @@
 
         <hr class="featurette-divider">
 
+        <!-- How I ended up in New Mexico -->
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">I currently live in <span class="text-muted"> northern New Mexico.</span></h2>
@@ -145,10 +154,17 @@
       <hr class="featurette-divider">
     </div>
 
-</body>
 
-
-
-
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Latest compiled and minified JavaScript -->
+  
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- make sure you place jquery link before the JavaScript link.  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
