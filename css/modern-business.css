@@ -27,3 +27,17 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+
+pre
+{
+  overflow-x:auto;
+}
+@media print
+{
+  pre
+  {
+    overflow-x:visible;
+    white-space:pre-wrap;
+  }
+}
