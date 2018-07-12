@@ -16,9 +16,15 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="css/prism.css" rel="stylesheet" />
+
   </head>
 
   <body>
+
+    <!-- Needed incase of code block usage -->
+    <script src="prism.js"></script>
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -61,8 +67,9 @@
                 Notes
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownNotes">
-                <a class="dropdown-item" href="blog-home-1.html">GEANT 4</a>
-                <a class="dropdown-item" href="blog-home-1.html">Test page</a>
+                <a class="dropdown-item" href="geant4.html">GEANT4</a>
+                <a class="dropdown-item" href="rootcern.html">ROOT</a>
+                <a class="dropdown-item" href="testpage.html">Test Page</a>
                 
               </div>
             </li>
@@ -99,44 +106,47 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3 text-center"><small> Hello, here are some things about me!</small></h1>
+      <h1 class="mt-4 mb-3 text-center"><small> This is sort of the page that I test out new code with</small></h1>
 
       <!-- Intro Content -->
+
       <div class="row">
-        <div class="col-lg-6">
-          <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+        <div class="col-lg-12">
+          
+          <p>I am trying to figure out a way to incorporate code in a simple and elegant way into my web pages. Lets see how it goes!</p>
         </div>
-        <div class="col-lg-6">
-          <h2>I am a experimental <span class="text-muted">  nuclear physist.</span></h2>
-          <p>I first became interested in physics during my first year of undergrad at Florida State University. During an Astronomy 101 course I gradually became captivated by stars and how they generate their energy (nuclear burning). Luckily, FSU had a low energy nuclear program that studied the same nuclear reactions that power the cosmos. Before the end of that Astronomy class, I had switched majors and was ultimately set on the path I am now on. </p>
-          <p>After FSU I went on to grad school at the University of Notre Dame, where I studied and performed reseach under the guidance of Michael Weischer. Under Dr. Weischer's guidance I studied several important (&#945,p) reactions in Type 1 X-ray bursts.</p>
-        </div>
-
-       
-
-        <pre ><code>function getToSleep()
-        {
-        while(noise &lt;= 10 &amp;&amp; sleep !== "zzz")
-        {
-          sheep ++;
-        }
-        if(noise &gt; 10)
-        {
-          return false;
-        }
-        return true;
-      }</code></pre>
-              
-
       </div>
-      <!-- /.row -->
 
+      <div class="row">
+        <div class="col-lg-12">
+          
+          <!-- some test code -->
+          <pre class="line-numbers">
+            <code class="language-c">function getToSleep(){
+              while(noise &lt;= 10 &amp;&amp; sleep !== "zzz"){
+                sheep ++;           // THIS IS A REALLY LONG COMMENT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              }
+              if(noise &gt; 10){
+                return false;
+              }
+            return true;
+            }
+            </code>
+          </pre>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-lg-12">
+          
+          <p>woohoo!</p>
+        </div>
+      </div>
 
     </div>
     <!-- /.container -->
 
-    
+
     <hr>
 
    
