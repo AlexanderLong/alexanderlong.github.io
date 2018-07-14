@@ -1,0 +1,17 @@
+From git: 
+We found a potential security vulnerability in one of your dependencies.
+A dependency defined in package-lock.json has known security vulnerabilities and should be updated.
+
+Only users who have been granted access to vulnerability alerts for this repository can see this message.
+Learn more about vulnerability alerts
+
+> I then deleted the entry for hoek in package-lock.json
+"boom": {
+            "version": "2.10.1",
+            "resolved": "https://registry.npmjs.org/boom/-/boom-2.10.1.tgz",
+            "integrity": "sha1-OciRjO/1eZ+D+UkqhI9iWt0Mdm8=",
+            "dev": true,
+            "requires": {
+                "hoek": "2.16.3"
+            }
+        },
