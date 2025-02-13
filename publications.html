@@ -21,114 +21,44 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Alexander Long</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            
-            <!-- ABOUT -->
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-        
-            <!-- CONTACT -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            
-            <!-- CV -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCV" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Curriculum Vitae
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCV">
-                <a class="dropdown-item" href="education.html">Education</a>
-                <a class="dropdown-item" href="researchExp.html">Research Experience</a>
-                <a class="dropdown-item" href="awardsAndPresentations.html">Awards & Conference Presentations</a>
-                <a class="dropdown-item" href="publications.html">Publications</a>
-                <a class="dropdown-item" href="./images/ALongResume.pdf" download="ALongResume" >Resume</a>
-                <a class="dropdown-item"  href="./images/ALongCV.pdf" download="ALongCV.pdf" >CV</a>
-              </div>
-            </li>
-            
-            <!-- Notes -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Notes
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownNotes">
-                <a class="dropdown-item" href="geant4.html">GEANT4</a>
-                <a class="dropdown-item" href="rootcern.html">ROOT</a>
-                <a class="dropdown-item" href="testpage.html">Test Page</a>
-                
-              </div>
-            </li>
-
-            <!-- USEFUL LINKS -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Useful Links
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLinks">
-                <a class="dropdown-item" href="http://www.nndc.bnl.gov/">NNDC</a>
-                <a class="dropdown-item" href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
-                <a class="dropdown-item" href="http://www.jinaweb.org/">JINA-CEE</a>
-                <a class="dropdown-item" href="https://root.cern.ch/">ROOOOT!</a>
-                <a class="dropdown-item" href="https://matplotlib.org/">MatPlotLib</a>
-                <a class="dropdown-item" href="http://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 Manual</a>
-                <a class="dropdown-item" href="https://github.com/along4">My GitHub Page</a>
-                <!--<a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              -->
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
 
     <!-- Page Content -->
+
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3 text-center"> My Research Experience      </h1>
+      <h1 class="mt-4 mb-3 text-center"> My Research Experience</h1>
 
       <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
         
         <div class="card">
           <div class="card-header" role="tab" id="headingOne">
             <h5 class="mb-0 text-center">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                <p class="lead">Public Communications</p>
-
-
-              </a>
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><p class="lead">Public Communications</p></a>
             </h5>
           </div>
           
           <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-body">
-              
               <p style="font-size:140%;"> Neutron Vision at Los Alamos: Exploring the Frontiers of Nuclear Materials Science </p>
               <p><span class="text-muted"><b>Alexander Long</b> & Sven Vogel</span> <br>
               <a href="https://www.ans.org/pubs/magazines/nn/year-2025/month-2/">Nuclear News 68-2 (2025)</a></p>
-
-
             </div>
           </div>
+
         </div>
 
       <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
         
-
-        <div class="card">
+        <div class="card">  
           <div class="card-header" role="tab" id="headingTwo">
             <h5 class="mb-0 text-center">
               <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -136,9 +66,9 @@
               </a>
             </h5>
           </div>
+
           <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="card-body">
-              
               <p style="font-size:140%;"> Impact of extinction effects on neutron transmission and diffraction in solid beryllium metal </p>
               <p><span class="text-muted"> S. Xu, D.D. DiJulio, J.I. Marquez Damian, S.C. Vogel, <b>A.M. Long</b>, T.Y. Hirsh, T. Kittelmann, V. Kuksenko, & G. Muhrer </span> <br>
               <i>Physical Review B, (<b>submitted</b>)</i></p>
@@ -260,28 +190,21 @@
           </div>
           <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="card-body">
-              
             	<p style="font-size:140%;">Recent Nuclear Astrophysics Measurements using the TwinSol Separator</p>
-				<p><span class="text-muted"> Bardayan, D.W., Ahn, T., Allen, J., Becchetti, F.D., Blackmon, J.C., Brodeur, M., Frentz, B., Gupta,Y.K., Hall, M.R., Hall, O., Henderson, S., Hu, J., Kelly, J.M., Kolata, J.J.,<b>Long, A.</b>, Long, J., Macon,K., Nicoloff, C., O’Malley, P.D., Ostdiek, K., Pain, S.D., Riggins, J., Schultz, B.E., Smith, M., Strauss, S., Torres-Isea, R.O.</span> <br> <a href="">Journal of Physics: Conference Series 703 (2016)</a></p> 
-
-
-
+				      <p><span class="text-muted"> Bardayan, D.W., Ahn, T., Allen, J., Becchetti, F.D., Blackmon, J.C., Brodeur, M., Frentz, B., Gupta,Y.K., Hall, M.R., Hall, O., Henderson, S., Hu, J., Kelly, J.M., Kolata, J.J.,<b>Long, A.</b>, Long, J., Macon,K., Nicoloff, C., O’Malley, P.D., Ostdiek, K., Pain, S.D., Riggins, J., Schultz, B.E., Smith, M., Strauss, S., Torres-Isea, R.O.</span> <br> <a href="">Journal of Physics: Conference Series 703 (2016)</a></p> 
             </div>
           </div>
         </div>
-
-
-
-
+      </div>
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... probably</p>
+      <div class="container-fluid">
+        <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... Probably</p>
       </div>
-      <!-- /.container -->
+      <!-- /.container-fluid -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
