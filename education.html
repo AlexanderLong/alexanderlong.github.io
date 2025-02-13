@@ -1,155 +1,90 @@
+<!-- filepath: /home/l280162/Websites/alexanderlong.github.io/education.html -->
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>Alexander Long: Education</title>
 
-    <title>Alexander Long: Education</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 56px; /* Adjust this value based on your navbar height */
+    }
+  </style>
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
+<body>
 
-  </head>
+  <!-- Navigation -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
 
-  <body>
+  <!-- Page Content -->
+  <div class="container">
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Alexander Long</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            
-            <!-- ABOUT -->
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-        
-        <!-- CONTACT -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            
-            <!-- CV -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCV" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Curriculum Vitae
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCV">
-                <a class="dropdown-item" href="education.html">Education</a>
-                <a class="dropdown-item" href="researchExp.html">Research Experience</a>
-                <a class="dropdown-item" href="awardsAndPresentations.html">Awards & Conference Presentations</a>
-                <a class="dropdown-item" href="publications.html">Publications</a>
-                <a class="dropdown-item" href="./images/ALongResume.pdf" download="ALongResume" >Resume</a>
-                <a class="dropdown-item"  href="./images/ALongCV.pdf" download="ALongCV.pdf" >CV</a>
-              </div>
-            </li>
-            
-            <!-- Notes -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Notes
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownNotes">
-                <a class="dropdown-item" href="geant4.html">GEANT4</a>
-                <a class="dropdown-item" href="rootcern.html">ROOT</a>
-                <a class="dropdown-item" href="testpage.html">Test Page</a>
-                
-              </div>
-            </li>
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3 text-center">My Education </h1>
 
-            <!-- USEFUL LINKS -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Useful Links
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLinks">
-                <a class="dropdown-item" href="http://www.nndc.bnl.gov/">NNDC</a>
-                <a class="dropdown-item" href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
-                <a class="dropdown-item" href="http://www.jinaweb.org/">JINA-CEE</a>
-                <a class="dropdown-item" href="https://root.cern.ch/">ROOOOT!</a>
-                <a class="dropdown-item" href="https://matplotlib.org/">MatPlotLib</a>
-                <a class="dropdown-item" href="http://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 Manual</a>
-                <a class="dropdown-item" href="https://github.com/along4">My GitHub Page</a>
-                <!--<a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              -->
-              </div>
-            </li>
-          </ul>
-        </div>
+    <hr>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Florida State University</h2>
+        <p class="lead">B.S., PHYSICS WITH HONORS - GPA: 3.4/4.0</p>
+        <p> Honors Thesis Topic: Time-of-Flight Calibrations of Neutron TOF Wall Array at John D. Fox Superconducting Accelerator Laboratory </p>
+        <p>Advisor: Professor Grigory Rogachev (Now at Texas A&M University)</p>
       </div>
-    </nav>
+      <div class="col-md-5 text-center">
+        <a><img src="https://i.imgur.com/j3esmYd.jpg" title="source: imgur.com" style="width:150px;height:150px;" /> </a>
+      </div>
+    </div>
 
-    <!-- Page Content -->
+    <hr class="featurette-divider">
+
+    <!-- How I ended up in New Mexico -->
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">University of Notre Dame</h2>
+        <p class="lead">PH.D., PHYSICS - GPA: 3.7/4.0</p>
+        <a href="https://curate.nd.edu/show/rx913n22m9v">
+          <p> Thesis Topics: An Indirect Study of The Astrophysical 34Ar(&#945,p)37K Reaction and its Influence on Type-1 X-Ray Burst Light Curves. </p>
+        </a>
+        <p>Advisor: Professor Michael Wiescher</p>
+      </div>
+      <div class="col-md-5 text-center">
+        <a><img src="https://i.imgur.com/ilFB2GM.png" title="source: imgur.com" style="width:400px;height:100px;" /></a>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
     <div class="container">
-
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3 text-center">My Education </h1>
-
-      <hr>
-      <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Florida State University</h2>
-            <p class="lead">B.S., PHYSICS WITH HONORS - GPA: 3.4/4.0</p>
-            <p> Honors Thesis Topic: Time-of-Flight Calibrations of Neutron TOF Wall Array at John D. Fox Superconducting Accelerator Laboratory </p>
-            <p>Advisor: Professor Grigory Rogachev (Now at Texas A&M University)</p>
-
-            
-          </div>
-          <div class="col-md-5 text-center">
-            <a><img src="https://i.imgur.com/j3esmYd.jpg" title="source: imgur.com" style="width:150px;height:150px;" /> </a>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-      
-
-        <!-- How I ended up in New Mexico -->
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">University of Notre Dame</h2>
-            <p class="lead">PH.D., PHYSICS - GPA: 3.7/4.0</p>
-            <a  href="https://curate.nd.edu/show/rx913n22m9v"> <p> Thesis Topics: An Indirect Study of The Astrophysical 34Ar(&#945,p)37K Reaction and its Influence on Type-1 X-Ray Burst Light Curves. </p></a>
-            <p>Advisor: Professor Michael Wiescher</p>
-
-            
-          </div>
-          <div class="col-md-5 text-center">
-            <a><img src="https://i.imgur.com/ilFB2GM.png" title="source: imgur.com" style="width:400px;height:100px;"/></a>
-          </div>
-        </div>
-
-
+      <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... probably</p>
     </div>
     <!-- /.container -->
+  </footer>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... probably</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+</body>
 
 </html>
