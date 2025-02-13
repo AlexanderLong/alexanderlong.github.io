@@ -1,118 +1,64 @@
+<!-- filepath: /home/l280162/Websites/alexanderlong.github.io/geant4.html -->
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>Alexander Long</title>
 
-    <title>Alexander Long </title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 56px; /* Adjust this value based on your navbar height */
+    }
+  </style>
+</head>
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
+<body>
 
-  </head>
+  <!-- Navigation -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
 
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Hero Section -->
+    <section class="hero bg-dark text-white text-center py-5">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Alexander Long</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            
-            <!-- ABOUT -->
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-    		
-    		<!-- CONTACT -->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            
-            <!-- CV -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCV" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Curriculum Vitae
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCV">
-                <a class="dropdown-item" href="education.html">Education</a>
-                <a class="dropdown-item" href="researchExp.html">Research Experience</a>
-                <a class="dropdown-item" href="awardsAndPresentations.html">Awards & Conference Presentations</a>
-                <a class="dropdown-item" href="publications.html">Publications</a>
-                <a class="dropdown-item" href="./images/ALongResume.pdf" download="ALongResume" >Resume</a>
-                <a class="dropdown-item"  href="./images/ALongCV.pdf" download="ALongCV.pdf" >CV</a>
-              </div>
-            </li>
-            
-            <!-- Notes -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Notes
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownNotes">
-                <a class="dropdown-item" href="geant4.html">GEANT4</a>
-                <a class="dropdown-item" href="rootcern.html">ROOT</a>
-                <a class="dropdown-item" href="testpage.html">Test Page</a>
-                
-              </div>
-            </li>
-
-            <!-- USEFUL LINKS -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Useful Links
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLinks">
-              	<a class="dropdown-item" href="http://www.nndc.bnl.gov/">NNDC</a>
-                <a class="dropdown-item" href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
-                <a class="dropdown-item" href="http://www.jinaweb.org/">JINA-CEE</a>
-                <a class="dropdown-item" href="https://root.cern.ch/">ROOOOT!</a>
-                <a class="dropdown-item" href="https://matplotlib.org/">MatPlotLib</a>
-                <a class="dropdown-item" href="http://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 Manual</a>
-                <a class="dropdown-item" href="https://github.com/along4">My GitHub Page</a>
-                <!--<a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            	-->
-              </div>
-            </li>
-          </ul>
-        </div>
+        <h1 class="display-4">Alex's Notes!</h1>
+        <p class="lead">I am trying to keep an active notebook on some of the ideas, programs, and issues I encounter</p>
       </div>
-    </nav>
+    </section>
 
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <!-- Your page content here -->
+  </div>
 
- 
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... Probably</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-    <hr>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-   
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... Probably</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+</body>
 
 </html>

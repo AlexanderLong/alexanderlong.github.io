@@ -1,10 +1,11 @@
+/* filepath: /home/l280162/Websites/alexanderlong.github.io/css/modern-business.css */
 /*!
  * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
-body {
+ body {
   padding-top: 54px;
 }
 
@@ -28,25 +29,30 @@ body {
   margin-bottom: 30px;
 }
 
-
-
 /* Stuff for code blocks */
-pre
-{
-  overflow-x:auto;
-}
-pre
-{
-  -moz-tab-size:4;
-  -o-tab-size:4;
-  tab-size:4;
+pre {
+  overflow-x: auto;
 }
 
-@media print
-{
-  pre
-  {
-    overflow-x:visible;
-    white-space:pre-wrap;
+pre {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+@media print {
+  pre {
+    overflow-x: visible;
+    white-space: pre-wrap;
   }
+}
+
+/* Custom styles for fixing the white space issue */
+body {
+  padding-top: 0px; /* Adjust this value based on your navbar height */
+}
+
+.fixed-size-img {
+  height: 300px;
+  object-fit: cover;
 }
