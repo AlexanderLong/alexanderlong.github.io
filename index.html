@@ -1,98 +1,167 @@
-<!-- filepath: /home/l280162/Websites/alexanderlong.github.io/index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Alexander Long</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <!--link href="css/modern-business.css" rel="stylesheet" -->
-  <style>
-    .carousel-item img {
-      height: 500px;
-      object-fit: cover;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alexander Long's research in neutron imaging, materials science, detectors, and scientific software at the Los Alamos Neutron Science Center.">
+  <meta name="author" content="Alexander Long">
+  <title>Alexander Long | Neutron Imaging &amp; Materials Science</title>
+  <link rel="stylesheet" href="css/home.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Navigation----------------------------------------------------------- -->
-  <div id="navbar-placeholder"></div>
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      });
-  </script>
-  <!-- Navigation----------------------------------------------------------- -->
-
-  <!-- Page Content -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/CoverImageNN.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Neutron Imaging at the Los Alamos Science Center</h5>
-          <a href="https://www.ans.org/pubs/magazines/nn/">
-            <p>Check out our feature in Nuclear News!</p>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/Skills.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>My Curriculum Vitae</h5>
-          <a href="./images/ALongCV.pdf">
-            <p>Download my current CV?</p>
-          </a>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/Losalamos.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Running in and around Los Alamos </h5>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-current="page">
+      <span class="brand-mark" aria-hidden="true">AL<span>.</span></span>
+      <span>Alexander Long</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="researchExp.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="presentations.html">Talks</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cv" href="images/ALongCV.pdf" download>CV &nearr;</a>
+    </nav>
+  </header>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... Probably</p>
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="accent-line" aria-hidden="true"></span> Neutron imaging / Materials science</p>
+        <h1 id="hero-title">A different way<br>to see <span>inside.</span></h1>
+        <p class="hero-description">I develop neutron imaging techniques, detectors, and software to explore materials from the inside out.</p>
+        <div class="actions">
+          <a class="button primary" href="#research">Explore my research <span aria-hidden="true">&rarr;</span></a>
+          <a class="button secondary" href="publications.html">Publications &nearr;</a>
+        </div>
+        <p class="hero-location">Staff scientist / Los Alamos Neutron Science Center</p>
+      </div>
+      <figure class="hero-visual">
+        <a href="https://www.ans.org/pubs/magazines/nn/">
+          <img src="images/CoverImageNN.jpg" alt="Green Nuclear News cover from February 2025, featuring neutron imaging equipment and the headline Materials: Engineered for Energy." width="954" height="1260" fetchpriority="high">
+        </a>
+        <figcaption><span>Nuclear News / February 2025</span><span>Neutron imaging at LANSCE</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="topic-strip wrap">
+      <span>Energy-resolved imaging</span>
+      <span>Event-mode detectors</span>
+      <span>Scientific software</span>
     </div>
-    <!-- /.container -->
+
+    <section class="section wrap" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / Research</p>
+          <h2 id="research-title">New tools. Deeper insight.</h2>
+        </div>
+        <a class="text-link" href="researchExp.html">Research experience &nearr;</a>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <span class="card-number">01</span>
+          <div>
+            <p class="card-category">Materials</p>
+            <h3>Energy-resolved<br>neutron imaging</h3>
+            <p>Using neutron resonances and Bragg edges to investigate isotopic composition and material structure without cutting a sample open.</p>
+          </div>
+          <a class="text-link" href="researchExp.html">Explore the work <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="research-card">
+          <span class="card-number">02</span>
+          <div>
+            <p class="card-category">Instrumentation</p>
+            <h3>From photons<br>to neutron events</h3>
+            <p>Developing photon-counting detector systems and event reconstruction methods that unlock new ways to measure with neutrons.</p>
+          </div>
+          <a class="text-link" href="talks/itmnr-10/">See the ITMNR-10 talk <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="research-card">
+          <span class="card-number">03</span>
+          <div>
+            <p class="card-category">Software</p>
+            <h3>Better experiments<br>through better code</h3>
+            <p>Building open-source tools for neutron imaging acquisition and analysis, including HERMES and PLEIADES.</p>
+          </div>
+          <a class="text-link" href="https://github.com/along4">Explore on GitHub &nearr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="talks" aria-labelledby="talk-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">02 / Ideas in public</p>
+          <h2 id="talk-title">Featured presentation</h2>
+        </div>
+        <a class="text-link" href="presentations.html">All presentations &nearr;</a>
+      </div>
+      <article class="talk-card">
+        <div class="talk-meta">
+          <span class="pill">ITMNR-10</span>
+          <p>Annecy, France<br>12&ndash;16 October 2026</p>
+          <span class="talk-format">Conference presentation</span>
+        </div>
+        <div class="talk-content">
+          <h3>Frontiers in Neutron Radiography at LANSCE</h3>
+          <p>Enabled by Event-Mode Imaging</p>
+          <a class="button primary" href="talks/itmnr-10/">Open the slides <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="talk-art" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+      </article>
+      <p class="press-note">Also in print: <a class="text-link" href="https://www.ans.org/pubs/magazines/nn/">neutron imaging at LANSCE in Nuclear News &nearr;</a></p>
+    </section>
+
+    <section class="section wrap about-section" id="about" aria-labelledby="about-title">
+      <figure class="landscape">
+        <img src="images/Losalamos.jpg" width="800" height="530" alt="Sunlit mesas and mountain scenery around Los Alamos, New Mexico." loading="lazy">
+        <figcaption>Outside the lab / Los Alamos, New Mexico</figcaption>
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow">03 / A little background</p>
+        <h2 id="about-title">Physics, materials,<br>and mountain trails.</h2>
+        <p>My research has taken me from nuclear astrophysics to materials science. Today, I work on neutron imaging at LANSCE. Outside the lab, you'll often find me running the trails around Los Alamos.</p>
+        <a class="text-link" href="about.html">More about me <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+
+    <section class="contact-section wrap" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Let's connect</p>
+        <h2 id="contact-title">Interested in neutron imaging?</h2>
+      </div>
+      <a class="button primary" href="contact.html">Get in touch &nearr;</a>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-main">
+      <span>Alexander Long / Personal research website</span>
+      <nav aria-label="More about my work">
+        <a href="education.html">Education</a>
+        <a href="awardsAndPresentations.html">Awards &amp; talk history</a>
+        <a href="images/ALongCV.pdf" download>Curriculum vitae</a>
+        <a href="publications.html">Publications</a>
+        <a href="https://github.com/along4">GitHub &nearr;</a>
+      </nav>
+    </div>
+    <details class="footer-resources">
+      <summary>Notes &amp; useful resources</summary>
+      <nav aria-label="Notes and scientific resources">
+        <a href="geant4.html">GEANT4 notes</a>
+        <a href="rootcern.html">ROOT notes</a>
+        <a href="testpage.html">Test page</a>
+        <a href="https://www.nndc.bnl.gov/">NNDC</a>
+        <a href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
+        <a href="http://www.jinaweb.org/">JINA-CEE</a>
+        <a href="https://root.cern.ch/">ROOT</a>
+        <a href="https://matplotlib.org/">Matplotlib</a>
+        <a href="https://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 manual</a>
+      </nav>
+    </details>
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>

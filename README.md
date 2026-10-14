@@ -11,14 +11,75 @@ From this repository, run:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://localhost:8000/presentations.html. Use an HTTP server rather than
-opening the HTML files directly: the navigation and slide Markdown load with
-`fetch`, which needs HTTP.
+Open http://localhost:8000/ for the homepage, or
+http://localhost:8000/presentations.html for the talks. Use an HTTP server
+rather than opening the HTML files directly: the other pages' navigation and
+slide Markdown load with `fetch`, which needs HTTP.
+
+## Homepage
+
+The homepage, research, publications, talks, about, and contact pages use the Editorial
+layout with shared styles in `css/home.css` and static navigation. None requires
+Bootstrap; only the talks page uses JavaScript, to switch presentations.
+Other pages continue to use `navbar.html` and their existing
+styles. All main navigation uses the same order: Research, Publications,
+Talks, About, Contact, and CV download. Keep the static headers in `index.html`,
+`researchExp.html`, `publications.html`, `presentations.html`, `about.html`, and
+`contact.html` consistent with `navbar.html`.
+The Editorial footers preserve access to education, awards, notes, and
+scientific resources.
+
+The homepage features the Nuclear News cover in `images/CoverImageNN.jpg`
+and reuses the locally hosted Source Sans Pro fonts in `talks/itmnr-10/`.
+When replacing that talk's build, keep those fonts or update their paths
+in `css/home.css`.
+The featured talk is maintained directly in `index.html`; update its title,
+event, dates, and link when featuring a different presentation.
+
+## Research
+
+`researchExp.html` presents current LANSCE work as project cards, followed by
+an experience timeline with expandable role details. The timeline uses native
+HTML `<details>` elements and works without JavaScript. Current work is always
+visible. Existing `collapseOne` through `collapseFive` fragment IDs are retained.
+
+Layout-specific styles are in `css/research.css`. Maintain current projects
+in `.research-work-grid` and earlier roles in `.experience-timeline`, keeping
+scientific notation, project links, institutions, and dates with each entry.
+
+## About
+
+`about.html` presents the research journey and trail-running interests, with
+existing local images from `images/ILikeRunning.jpeg` and `images/Losalamos.jpg`.
+Layout-specific styles are in `css/about.css`. The biography, background
+waypoints, trail suggestions, and links work without JavaScript.
+
+## Contact
+
+`contact.html` links to the GitHub account, with no contact form or other social
+accounts. Layout-specific styles are in `css/contact.css`. It uses local styles
+and works without JavaScript or an external icon library.
+
+## Publications
+
+`publications.html` lists public communications, peer-reviewed papers, and
+conference proceedings. All entries are visible without JavaScript; category
+links jump to each section. The existing `collapseOne`, `collapseTwo`, and
+`collapseThree` fragment IDs are retained for bookmarked links.
+
+Layout-specific styles are in `css/publications.css`. Each publication is a
+pair of paragraphs: the title, followed by authors and the linked journal or
+publication record. Keep that pairing when adding entries, and update the
+category counts in the sidebar. If a citation has no URL, display its venue
+as text rather than an empty link.
 
 ## Presentations
 
-The shared `navbar.html` links to `presentations.html`. The dropdown lists talks
-with hosted slides, newest first. The full talk history remains on
+The Talks tab links to `presentations.html`, styled with `css/home.css` and
+`css/talks.css`. The dropdown lists talks with hosted slides, newest first.
+A small inline script updates the selected talk's title, event, location, and
+link; the initial presentation and history links also work without JavaScript.
+The page includes a slide keyboard guide. The full talk history remains on
 `awardsAndPresentations.html`.
 
 The ITMNR-10 talk is hosted at:

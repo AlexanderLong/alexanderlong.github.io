@@ -1,70 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Conference presentations and slides by Alexander Long.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conference presentations and hosted slides by Alexander Long on neutron imaging, materials science, and detector development.">
   <meta name="author" content="Alexander Long">
-  <title>Alexander Long: Presentations</title>
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/modern-business.css" rel="stylesheet">
-  <style>
-    body { min-height: 100vh; }
-    main { flex: 1; }
-  </style>
+  <title>Alexander Long | Talks</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/talks.css">
 </head>
-<body class="d-flex flex-column">
-  <div id="navbar-placeholder"></div>
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-        const link = document.querySelector('a[href="presentations.html"]');
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      });
-  </script>
-
-  <header class="bg-dark text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Presentations</h1>
-      <p class="lead mb-0">Conference talks and slides</p>
-    </div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">AL<span>.</span></span>
+      <span>Alexander Long</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="researchExp.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="presentations.html" aria-current="page">Talks</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cv" href="images/ALongCV.pdf" download>CV &nearr;</a>
+    </nav>
   </header>
 
-  <main class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-9">
-        <label for="presentation-select" class="font-weight-bold">Choose a presentation</label>
+  <main id="main" tabindex="-1">
+    <header class="page-intro wrap">
+      <div>
+        <p class="eyebrow">Research / In conversation</p>
+        <h1>Talks<span>.</span></h1>
+        <p class="page-description">Ideas from the beamline to the conference stage. Explore presentations on neutron imaging and the tools that make it possible.</p>
+      </div>
+      <a class="button secondary" href="awardsAndPresentations.html">Full talk history &nearr;</a>
+    </header>
+
+    <section class="hosted-talks wrap" aria-labelledby="hosted-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / On the stage</p>
+          <h2 id="hosted-title">Presentations &amp; slides</h2>
+        </div>
+        <span class="hosted-note">Open a talk and explore the slides at your own pace.</span>
+      </div>
+
+      <div class="presentation-picker">
+        <label for="presentation-select">Choose a presentation</label>
         <!-- Add new talks at the top; keep each option's metadata with its URL. -->
-        <select id="presentation-select" class="custom-select mb-4" aria-controls="presentation-details">
+        <select id="presentation-select" aria-controls="presentation-details" disabled>
           <option value="talks/itmnr-10/"
                   data-title="Frontiers in Neutron Radiography at LANSCE, Enabled by Event-Mode Imaging"
                   data-event="10th International Topical Meeting on Neutron Radiography (ITMNR-10)"
                   data-location="Annecy, France · 12–16 October 2026"
                   selected>ITMNR-10 (2026) — Frontiers in Neutron Radiography at LANSCE</option>
         </select>
-
-        <article id="presentation-details" class="card" aria-live="polite">
-          <div class="card-body p-4">
-            <h2 id="presentation-title" class="h3">Frontiers in Neutron Radiography at LANSCE, Enabled by Event-Mode Imaging</h2>
-            <p id="presentation-event" class="mb-1">10th International Topical Meeting on Neutron Radiography (ITMNR-10)</p>
-            <p id="presentation-location" class="text-muted">Annecy, France · 12–16 October 2026</p>
-            <a id="presentation-link" class="btn btn-primary" href="talks/itmnr-10/">Open presentation</a>
-            <p class="small text-muted mt-3 mb-0">Use the arrow keys or Space to move through the slides. Press F for full screen or Esc for the slide overview.</p>
-          </div>
-        </article>
-
-        <p class="mt-4 mb-0">For a full list of past talks, see <a href="awardsAndPresentations.html">Awards &amp; Conference Presentations</a>.</p>
+        <noscript><p>The featured presentation below is available without JavaScript. Enable JavaScript to switch between presentations.</p></noscript>
       </div>
-    </div>
+
+      <article id="presentation-details" class="presentation-card" aria-labelledby="presentation-title" aria-live="polite">
+        <div class="presentation-context">
+          <p class="eyebrow">Conference presentation</p>
+          <p id="presentation-event">10th International Topical Meeting on Neutron Radiography (ITMNR-10)</p>
+          <p id="presentation-location">Annecy, France · 12–16 October 2026</p>
+          <div class="talk-art" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+        </div>
+        <div class="presentation-content">
+          <p class="eyebrow">From the lab</p>
+          <h3 id="presentation-title">Frontiers in Neutron Radiography at LANSCE, Enabled by Event-Mode Imaging</h3>
+          <a id="presentation-link" class="button primary" href="talks/itmnr-10/">Open presentation <span aria-hidden="true">&rarr;</span></a>
+          <p class="presentation-format">Hosted slides / Opens in your browser</p>
+        </div>
+      </article>
+
+      <aside class="slide-guide" aria-labelledby="guide-title">
+        <div>
+          <p class="eyebrow">A quick guide</p>
+          <h3 id="guide-title">Make yourself at home in the slides.</h3>
+        </div>
+        <dl class="slide-shortcuts">
+          <div><dt><kbd>Arrow keys</kbd> / <kbd>Space</kbd></dt><dd>Move through the slides</dd></div>
+          <div><dt><kbd>F</kbd></dt><dd>Full screen</dd></div>
+          <div><dt><kbd>Esc</kbd></dt><dd>Slide overview</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="talk-history wrap" aria-labelledby="history-title">
+      <div>
+        <p class="eyebrow">02 / Looking back</p>
+        <h2 id="history-title">More from the conference trail.</h2>
+        <p>For the full list of past talks and awards, visit the presentation history.</p>
+      </div>
+      <a class="button secondary" href="awardsAndPresentations.html">Awards &amp; past talks &nearr;</a>
+    </section>
+
+    <section class="contact-section wrap" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Continue the conversation</p>
+        <h2 id="contact-title">Let's talk about neutron imaging.</h2>
+      </div>
+      <a class="button primary" href="contact.html">Get in touch &nearr;</a>
+    </section>
   </main>
 
-  <footer class="py-4 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Alexander Long</p>
+  <footer class="site-footer wrap">
+    <div class="footer-main">
+      <span>Alexander Long / Personal research website</span>
+      <nav aria-label="More about my work">
+        <a href="education.html">Education</a>
+        <a href="awardsAndPresentations.html">Awards &amp; talk history</a>
+        <a href="images/ALongCV.pdf" download>Curriculum vitae</a>
+        <a href="publications.html">Publications</a>
+        <a href="https://github.com/along4">GitHub &nearr;</a>
+      </nav>
     </div>
+    <details class="footer-resources">
+      <summary>Notes &amp; useful resources</summary>
+      <nav aria-label="Notes and scientific resources">
+        <a href="geant4.html">GEANT4 notes</a>
+        <a href="rootcern.html">ROOT notes</a>
+        <a href="testpage.html">Test page</a>
+        <a href="https://www.nndc.bnl.gov/">NNDC</a>
+        <a href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
+        <a href="http://www.jinaweb.org/">JINA-CEE</a>
+        <a href="https://root.cern.ch/">ROOT</a>
+        <a href="https://matplotlib.org/">Matplotlib</a>
+        <a href="https://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 manual</a>
+      </nav>
+    </details>
   </footer>
 
   <script>
@@ -78,8 +142,7 @@
     }
     presentationSelect.addEventListener('change', showPresentation);
     showPresentation();
+    presentationSelect.disabled = false;
   </script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
