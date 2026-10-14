@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Conference presentations and slides by Alexander Long.">
+  <meta name="author" content="Alexander Long">
+  <title>Alexander Long: Presentations</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/modern-business.css" rel="stylesheet">
+  <style>
+    body { min-height: 100vh; }
+    main { flex: 1; }
+  </style>
+</head>
+<body class="d-flex flex-column">
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+        const link = document.querySelector('a[href="presentations.html"]');
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      });
+  </script>
+
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Presentations</h1>
+      <p class="lead mb-0">Conference talks and slides</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <label for="presentation-select" class="font-weight-bold">Choose a presentation</label>
+        <!-- Add new talks at the top; keep each option's metadata with its URL. -->
+        <select id="presentation-select" class="custom-select mb-4" aria-controls="presentation-details">
+          <option value="talks/itmnr-10/"
+                  data-title="Frontiers in Neutron Radiography at LANSCE, Enabled by Event-Mode Imaging"
+                  data-event="10th International Topical Meeting on Neutron Radiography (ITMNR-10)"
+                  data-location="Annecy, France · 12–16 October 2026"
+                  selected>ITMNR-10 (2026) — Frontiers in Neutron Radiography at LANSCE</option>
+        </select>
+
+        <article id="presentation-details" class="card" aria-live="polite">
+          <div class="card-body p-4">
+            <h2 id="presentation-title" class="h3">Frontiers in Neutron Radiography at LANSCE, Enabled by Event-Mode Imaging</h2>
+            <p id="presentation-event" class="mb-1">10th International Topical Meeting on Neutron Radiography (ITMNR-10)</p>
+            <p id="presentation-location" class="text-muted">Annecy, France · 12–16 October 2026</p>
+            <a id="presentation-link" class="btn btn-primary" href="talks/itmnr-10/">Open presentation</a>
+            <p class="small text-muted mt-3 mb-0">Use the arrow keys or Space to move through the slides. Press F for full screen or Esc for the slide overview.</p>
+          </div>
+        </article>
+
+        <p class="mt-4 mb-0">For a full list of past talks, see <a href="awardsAndPresentations.html">Awards &amp; Conference Presentations</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Alexander Long</p>
+    </div>
+  </footer>
+
+  <script>
+    const presentationSelect = document.getElementById('presentation-select');
+    function showPresentation() {
+      const option = presentationSelect.selectedOptions[0];
+      document.getElementById('presentation-title').textContent = option.dataset.title;
+      document.getElementById('presentation-event').textContent = option.dataset.event;
+      document.getElementById('presentation-location').textContent = option.dataset.location;
+      document.getElementById('presentation-link').href = option.value;
+    }
+    presentationSelect.addEventListener('change', showPresentation);
+    showPresentation();
+  </script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
