@@ -1,118 +1,79 @@
-<!-- filepath: /home/l280162/Websites/alexanderlong.github.io/contact.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Alexander Long: Contact</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/modern-business.css" rel="stylesheet">
-
-  <!-- Link to social media theme button -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find Alexander Long's projects and open-source work on GitHub.">
+  <meta name="author" content="Alexander Long">
+  <title>Alexander Long | Contact</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/contact.css">
 </head>
+<body class="contact-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">AL<span>.</span></span>
+      <span>Alexander Long</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="researchExp.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="presentations.html">Talks</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="nav-cv" href="images/ALongCV.pdf" download>CV &nearr;</a>
+    </nav>
+  </header>
 
-<body>
-
-  <!-- Navigation -->
-  <div id="navbar-placeholder"></div>
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      });
-  </script>
-
-  <!-- Page Content -->
-  <div class="container">
-
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3 text-center">Contact Me</h1>
-
-    <!-- Content Row -->
-    <div class="row text-center">
-      <div class="col-md-4">
-        <a href="https://twitter.com/ALongForTheWin"><i class="fab fa-4x fa-twitter"></i></a>
+  <main id="main" tabindex="-1">
+    <header class="page-intro wrap">
+      <div>
+        <p class="eyebrow">Contact / Connect through code</p>
+        <h1>Contact<span>.</span></h1>
+        <p class="page-description">Find my projects and open-source work on GitHub.</p>
       </div>
-      <div class="col-md-4">
-        <a href="https://github.com/along4"><i class="fab fa-4x fa-github"></i></a>
-      </div>
-      <div class="col-md-4">
-        <a href="https://www.facebook.com/alongforthewin?ref=bookmarks"><i class="fab fa-4x fa-facebook"></i></a>
-      </div>
+    </header>
+
+    <section class="contact-profiles wrap" aria-labelledby="github-title">
+      <a class="contact-profile" href="https://github.com/along4">
+        <span class="profile-symbol" aria-hidden="true">&lt;/&gt;</span>
+        <div class="profile-copy">
+          <p class="eyebrow">Code &amp; collaboration</p>
+          <h2 id="github-title">GitHub</h2>
+          <p class="profile-handle">github.com/along4</p>
+          <p class="profile-description">Explore my repositories and scientific software.</p>
+        </div>
+        <span class="profile-arrow" aria-hidden="true">&nearr;</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-main">
+      <span>Alexander Long / Personal research website</span>
+      <nav aria-label="More about my work">
+        <a href="education.html">Education</a>
+        <a href="awardsAndPresentations.html">Awards &amp; talk history</a>
+        <a href="images/ALongCV.pdf" download>Curriculum vitae</a>
+        <a href="publications.html">Publications</a>
+        <a href="https://github.com/along4">GitHub &nearr;</a>
+      </nav>
     </div>
-
-    <hr>
-    <!-- Contact Form -->
-    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <div class="row">
-      <div class="col-lg-8 mb-4">
-        <h3>Send me a Message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Full Name:</label>
-              <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-              <p class="help-block"></p>
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Phone Number:</label>
-              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Email Address:</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
-            </div>
-          </div>
-          <div class="control-group form-group">
-            <div class="controls">
-              <label>Message:</label>
-              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-            </div>
-          </div>
-          <div id="success"></div>
-          <!-- For success/fail messages -->
-          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-        </form>
-      </div>
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... probably</p>
-    </div>
-    <!-- /.container -->
+    <details class="footer-resources">
+      <summary>Notes &amp; useful resources</summary>
+      <nav aria-label="Notes and scientific resources">
+        <a href="geant4.html">GEANT4 notes</a>
+        <a href="rootcern.html">ROOT notes</a>
+        <a href="testpage.html">Test page</a>
+        <a href="https://www.nndc.bnl.gov/">NNDC</a>
+        <a href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
+        <a href="http://www.jinaweb.org/">JINA-CEE</a>
+        <a href="https://root.cern.ch/">ROOT</a>
+        <a href="https://matplotlib.org/">Matplotlib</a>
+        <a href="https://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 manual</a>
+      </nav>
+    </details>
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
 </body>
-
 </html>

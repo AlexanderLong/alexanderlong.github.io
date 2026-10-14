@@ -1,77 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>About Me</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/modern-business.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Alexander Long: a journey from nuclear astrophysics to neutron imaging and materials science, with a love of trail running around Los Alamos.">
+  <meta name="author" content="Alexander Long">
+  <title>Alexander Long | About</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">AL<span>.</span></span>
+      <span>Alexander Long</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="researchExp.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="presentations.html">Talks</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cv" href="images/ALongCV.pdf" download>CV &nearr;</a>
+    </nav>
+  </header>
 
-  <!-- Navigation -->
-  <div id="navbar-placeholder"></div>
-  <script>
-    fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      });
-  </script>
-
-  <!-- Hero Section -->
-  <section class="hero bg-dark text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">About Me</h1>
-      <p class="lead">Learn more about my journey and interests</p>
-    </div>
-  </section>
-
-  <!-- Page Content -->
-  <div class="container mt-5">
-
-    <!-- About Me Section -->
-    <div class="row mb-4">
-      <div class="col-lg-12">
-        <h2>From <span class="text-muted"> nuclear physicist</span> to <span class="text-muted"> materials scientist</span> and everything inbetween</h2>
-        <p>I first became interested in physics during my first year of undergrad at Florida State University. During an Astronomy 101 course I gradually became captivated by stars and how they generate their energy (nuclear burning). Luckily, FSU had a low energy nuclear program that studied the same nuclear reactions that power the cosmos. Before the end of that Astronomy class, I had switched majors and was ultimately set on the path I am now on. After FSU I went on to grad school at the University of Notre Dame, where I studied and performed research under the guidance of Michael Weischer. Under Dr. Weischer's guidance I studied several important (&#945,p) reactions in Type 1 X-ray bursts. In 2016 I took a post-doc in the P-27 (now P-3) Low Energy Nuclear Physics group, where I studied (n,&#945) reactions at the Weapons Neutron Research Center on flight path 15R. Somewhere during 2018 a very funny thing happened. I got very interested in nuclear energy and at the same time a staff scientist position opened up in the Materials Science and Technology division that used neutron absorption resonances to non-destructively map out isotopes in nuclear fuels. I was hooked! I am now considered more of a materials scientist where I use Energy-Resolved Neutron Imaging to study all sort of cool and interesting nuclear materials problems in the relm of nuclear engineering. </p>
+  <main id="main" tabindex="-1">
+    <header class="page-intro wrap">
+      <div>
+        <p class="eyebrow">About / Beyond the beamline</p>
+        <h1>About<span>.</span></h1>
+        <p class="page-description">Nuclear physicist turned materials scientist. A research journey shaped by curiosity, with plenty of miles on the trails along the way.</p>
       </div>
-    </div>
+      <a class="button secondary" href="researchExp.html">Explore my research &nearr;</a>
+    </header>
 
-    <!-- Hobbies Section -->
-    <div class="row mb-4">
-      <div class="col-lg-12">
-        <h2>I like to <span class="text-muted"> run.</span></h2>
-        <p>I got into running during graduate school where I ran several half and full marathons. It was not until I cam to Los Alamos that I realized how much I love trail running. And Los Alamos is by far the best place for trail running. Located right on the boarder of the Valles Caldra and Santa Fe Nation Forest I can jump out my front door and have access to over 50 miles of single track and forest roads. It's amazing! If you are looking for any Los Alamos suggestions, my top trail runs in the area are Canada Bonita (by the ski hill), red-dot to blue-dot (along the Rio), and of course Guage Ridge. There is even more epic trials in the surrounding areas, but there are just too many to list. If you want follow me on <a href="https://www.strava.com">strava</a> and see what some of these runs look like. </p>
+    <section class="about-journey wrap" aria-labelledby="journey-title">
+      <div class="about-story">
+        <p class="eyebrow">01 / How I got here</p>
+        <h2 id="journey-title">From nuclear physics<br>to <span>materials science.</span></h2>
+        <p>I first became interested in physics during my first year of undergrad at Florida State University. During an Astronomy 101 course, I gradually became captivated by stars and how they generate their energy through nuclear burning. Luckily, FSU had a low-energy nuclear program that studied the same nuclear reactions that power the cosmos. Before the end of that astronomy class, I had switched majors and was ultimately set on the path I am now on.</p>
+        <p>After FSU, I went on to grad school at the University of Notre Dame, where I studied and performed research under the guidance of Michael Wiescher. Under Dr. Wiescher's guidance, I studied several important (&#945,p) reactions in Type 1 X-ray bursts.</p>
+        <p>In 2016, I took a post-doc in the P-27 (now P-3) Low Energy Nuclear Physics group, where I studied (n,&#945) reactions at the Weapons Neutron Research Center on flight path 15R.</p>
+        <p>Somewhere during 2018, a very funny thing happened. I got very interested in nuclear energy, and at the same time a staff scientist position opened up in the Materials Science and Technology division that used neutron absorption resonances to non-destructively map out isotopes in nuclear fuels. I was hooked! I am now considered more of a materials scientist, using Energy-Resolved Neutron Imaging to study all sorts of cool and interesting nuclear materials problems in the realm of nuclear engineering.</p>
+        <a class="text-link" href="researchExp.html">The work today <span aria-hidden="true">&rarr;</span></a>
       </div>
+
+      <aside class="about-background" aria-label="Background at a glance">
+        <figure class="profile-photo">
+          <img src="images/ILikeRunning.jpeg" width="357" height="322" alt="A runner on a forest trail beneath a cloudy sky." loading="lazy">
+          <figcaption>Outside the lab / On the trail</figcaption>
+        </figure>
+        <div class="background-card">
+          <p class="eyebrow">A few waypoints</p>
+          <dl>
+            <div><dt>The beginning</dt><dd>Florida State University<span>Undergraduate physics</span></dd></div>
+            <div><dt>The cosmos</dt><dd>University of Notre Dame<span>Nuclear astrophysics</span></dd></div>
+            <div><dt>The work today</dt><dd>Los Alamos<span>Neutron imaging &amp; materials science</span></dd></div>
+          </dl>
+          <a class="text-link" href="education.html">Education &amp; background &nearr;</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="about-trails wrap" aria-labelledby="trails-title">
+      <figure class="trail-landscape">
+        <img src="images/Losalamos.jpg" width="800" height="530" alt="Sunlit mesas, forest, and distant mountains around Los Alamos, New Mexico." loading="lazy">
+        <figcaption>Room to explore / Los Alamos, New Mexico</figcaption>
+      </figure>
+      <div class="trail-copy">
+        <p class="eyebrow">02 / Outside the lab</p>
+        <h2 id="trails-title">I like to <span>run.</span></h2>
+        <p>I got into running during graduate school, where I ran several half and full marathons. It was not until I came to Los Alamos that I realized how much I love trail running.</p>
+        <p>And Los Alamos is by far the best place for trail running. Located right on the border of the Valles Caldera and Santa Fe National Forest, I can jump out my front door and have access to over 50 miles of single track and forest roads. It's amazing!</p>
+        <p>If you are looking for Los Alamos suggestions, a few of my favorite trail runs are:</p>
+        <ul class="favorite-trails">
+          <li>Canada Bonita <span>By the ski hill</span></li>
+          <li>Red-dot to blue-dot <span>Along the Rio</span></li>
+          <li>Guage Ridge</li>
+        </ul>
+        <p>There are even more epic trails in the surrounding areas, but there are just too many to list.</p>
+        <a class="text-link" href="https://www.strava.com">Strava &nearr;</a>
+      </div>
+    </section>
+
+    <section class="contact-section wrap" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Science, trails, or a new idea</p>
+        <h2 id="contact-title">Let's start a conversation.</h2>
+      </div>
+      <a class="button primary" href="contact.html">Get in touch &nearr;</a>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div class="footer-main">
+      <span>Alexander Long / Personal research website</span>
+      <nav aria-label="More about my work">
+        <a href="education.html">Education</a>
+        <a href="awardsAndPresentations.html">Awards &amp; talk history</a>
+        <a href="images/ALongCV.pdf" download>Curriculum vitae</a>
+        <a href="publications.html">Publications</a>
+        <a href="https://github.com/along4">GitHub &nearr;</a>
+      </nav>
     </div>
-
-    <!-- Current Location Section -->
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... probably</p>
-    </div>
-    <!-- /.container -->
+    <details class="footer-resources">
+      <summary>Notes &amp; useful resources</summary>
+      <nav aria-label="Notes and scientific resources">
+        <a href="geant4.html">GEANT4 notes</a>
+        <a href="rootcern.html">ROOT notes</a>
+        <a href="testpage.html">Test page</a>
+        <a href="https://www.nndc.bnl.gov/">NNDC</a>
+        <a href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
+        <a href="http://www.jinaweb.org/">JINA-CEE</a>
+        <a href="https://root.cern.ch/">ROOT</a>
+        <a href="https://matplotlib.org/">Matplotlib</a>
+        <a href="https://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 manual</a>
+      </nav>
+    </details>
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>

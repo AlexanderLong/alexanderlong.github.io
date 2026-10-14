@@ -1,0 +1,19 @@
+.contact-page { display: flex; flex-direction: column; min-height: 100vh; }
+.contact-page main { flex: 1; }
+.contact-profiles { padding-block: 54px 70px; }
+.contact-profile { display: grid; grid-template-columns: 80px minmax(0, 1fr) 32px; gap: 32px; align-items: center; padding: 40px; border: 1px solid var(--line); border-top: 2px solid var(--accent); border-radius: 4px; background: var(--surface); }
+.contact-profile:hover { text-decoration: none; border-color: var(--accent); }
+.contact-profile:hover h2 { text-decoration: underline; text-underline-offset: 6px; }
+.profile-symbol { display: grid; place-items: center; width: 80px; height: 80px; border-radius: 6px; background: var(--soft); color: var(--accent); font-family: ui-monospace, monospace; font-size: 30px; }
+.profile-copy h2 { font-size: 32px; }
+.profile-handle { margin-top: 10px; color: var(--accent); font-size: 17px; font-weight: 600; overflow-wrap: anywhere; }
+.profile-description { margin-top: 12px; color: var(--muted); font-size: 17px; }
+.profile-arrow { color: var(--accent); font-size: 28px; text-align: right; }
+
+@media (max-width: 720px) {
+  .contact-profiles { padding-block: 30px 40px; }
+  .contact-profile { grid-template-columns: minmax(0, 1fr) 24px; gap: 22px; padding: 24px; }
+  .profile-symbol { grid-column: 1; width: 60px; height: 60px; font-size: 24px; }
+  .profile-copy { grid-column: 1 / -1; grid-row: 2; }
+  .profile-arrow { grid-column: 2; grid-row: 1; }
+}
