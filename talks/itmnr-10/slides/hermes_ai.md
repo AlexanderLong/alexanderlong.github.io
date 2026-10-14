@@ -4,29 +4,29 @@
 
 <div class="hermes-ai-layout">
   <div class="hermes-ai-points">
-    <h3>Available now</h3>
+    <h3>Available in v3.3.7</h3>
     <ul>
-      <li><strong>MCP tools</strong> help an assistant create and validate analysis or acquisition configs, check the camera, and report run status.</li>
-      <li>The <strong>hermes-config-and-files</strong> skill explains HERMES settings and output data.</li>
+      <li><strong>MCP tools</strong> help an assistant create analysis configs and validate HERMES configs.</li>
     </ul>
-    <h3>Planned skills</h3>
+    <h3>Planned skills &amp; tools</h3>
     <ul>
-      <li>Guide measurement setup, analysis, and troubleshooting step by step.</li>
-      <li>Find clustering settings and make movies of reconstructed events.</li>
+      <li>Explain settings and output data with the <strong>hermes-config-and-files</strong> skill.</li>
+      <li>Create acquisition configs, check the camera, and report run status.</li>
+      <li>Guide setup, analysis, and troubleshooting; find clustering settings and make event movies.</li>
     </ul>
     <div class="hermes-ai-addon">
-      <p class="hermes-ai-addon-title">Use with existing harnessess</p>
+      <p class="hermes-ai-addon-title">Use with existing harnesses</p>
       <div class="hermes-ai-addon-flow">
         <span>Codex / Claude Code</span>
         <span class="hermes-ai-addon-plus">+</span>
-        <span>HERMES skills &amp; MCP tools</span>
+        <span>HERMES MCP tools</span>
       </div>
-      <p>Pixi setup for Claude Code:</p>
+      <p>Pixi MCP setup for Claude Code:</p>
       <p class="hermes-ai-addon-install"><code>pixi run hermes-mcp-setup</code></p>
     </div>
   </div>
   <div class="chat-box">
-  <p class="chat-box-title">Example of an AI-assisted workflow</p>
+  <p class="chat-box-title">Planned AI-assisted workflow</p>
   <p class="chat-you">Set up a HERMES analysis for my data in ./run0014</p>
   <p class="chat-assistant">Which steps should I run: unpack only, up to photons, or all the way to neutron events? Should I run with default parameters or would you like me to run a parameter scan?</p>
   <p class="chat-you">All the way to events, and please run a parameter scan</p>

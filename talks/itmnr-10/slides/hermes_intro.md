@@ -28,7 +28,7 @@
 git = "https://github.com/lanl/HERMES.git"
 tag = "v3.3.7"</code></pre>
 <pre><code class="language-bash">pixi install   # builds HERMES from source
-pixi run hermes-mcp-setup # install skills and mcps
+pixi run hermes-mcp-setup # configure HERMES MCP
 </code></pre>
           <p class="hermes-script-note">Easy to set up in any project folder with pixi</p>
         </div>
