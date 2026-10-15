@@ -1,0 +1,61 @@
+.reveal .scintipix-slide .scintipix-config-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  align-items: center;
+  gap: 18px;
+}
+
+.reveal .scintipix-slide .scintipix-config-row .hermes-script {
+  min-width: 0;
+}
+
+.reveal :is(.scintipix-slide, .graace-sim-slide) .sim-software-logos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+}
+
+.reveal :is(.scintipix-slide, .graace-sim-slide) .sim-software-logos a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.reveal :is(.scintipix-slide, .graace-sim-slide) .sim-software-logos .sim-software-logo-wide {
+  grid-column: 1 / -1;
+}
+
+.reveal :is(.scintipix-slide, .graace-sim-slide) .sim-software-logos .sim-software-logo-wide img {
+  max-width: 100%;
+  max-height: 90px;
+}
+
+.reveal :is(.scintipix-slide, .graace-sim-slide) .sim-software-logos img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 122px;
+  max-height: 72px;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+.reveal .graace-sim-slide .graace-sim-config-row {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+}
+
+.reveal .graace-sim-slide .graace-sim-config-row .hermes-script {
+  min-width: 0;
+}
+
+.reveal .graace-sim-slide .sim-software-logos img {
+  max-width: 102px;
+}

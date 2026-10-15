@@ -16,7 +16,22 @@
         <p class="sim-summary">Simulates prompt gamma activation analysis</p>
       </div>
       <div class="graace-sim-details">
-        <div class="hermes-script">
+        <div class="graace-sim-config-row">
+          <div class="sim-software-logos" aria-label="GRAACE-SIM software stack">
+            <a href="https://docs.pydantic.dev/" target="_blank" rel="noopener noreferrer" title="Visit the Pydantic website">
+              <img src="images/pydantic_logo.webp" alt="Pydantic logo" />
+            </a>
+            <a href="https://pixi.sh/" target="_blank" rel="noopener noreferrer" title="Visit the Pixi website">
+              <img src="images/pixi_logo.png" alt="Pixi logo" />
+            </a>
+            <a class="sim-software-logo-wide" href="https://geant4.web.cern.ch/" target="_blank" rel="noopener noreferrer" title="Visit the Geant4 website">
+              <img src="images/g4logo-full-500x167.png" alt="Geant4 logo" />
+            </a>
+            <a class="sim-software-logo-wide" href="https://loguru.readthedocs.io/" target="_blank" rel="noopener noreferrer" title="Visit the Loguru website">
+              <img src="images/Logguru_logo.png" alt="Loguru logo" />
+            </a>
+          </div>
+          <div class="hermes-script">
 <pre><code class="language-yaml">source:
   particle: neutron
   position:
@@ -33,6 +48,7 @@ sample:
         mass_fraction: 1.0
         isotopes:
           - {mass_number: 58, atom_fraction: 1.0}</code></pre>
+          </div>
         </div>
         <ul class="hermes-features">
           <li>Can change setup without rebuilding the GEANT4 C++ code</li>

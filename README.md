@@ -104,6 +104,13 @@ Copy the **contents** of its `dist/` folder into this repository's
 preview locally before committing and publishing. Do not copy `node_modules`,
 `.pixi`, or the source repository's `.git` folder.
 
+The ScintiPix and GRAACE-SIM slides share a local layout override in
+`talks/itmnr-10/simulation-logos.css` and software logos in the talk's `images/`
+folder. Port these slide and style changes to the presentation source before
+replacing this build. Preview ScintiPix at
+http://localhost:8000/talks/itmnr-10/#/16 and GRAACE-SIM at
+http://localhost:8000/talks/itmnr-10/#/17.
+
 ### Add another talk
 
 1. Build or export the talk as a static website with relative asset paths.
