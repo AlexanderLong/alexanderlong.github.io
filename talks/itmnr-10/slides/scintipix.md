@@ -15,26 +15,45 @@
           <p class="sim-name">Scinti<em>Pix</em></p>
           <p class="sim-summary">Simulates the entire event-mode imaging setup,<br />from scintillator to sensor</p>
         </div>
-        <div class="hermes-script">
+        <div class="scintipix-config-row">
+          <div class="hermes-script">
 <pre><code class="language-yaml">scintillator:
   properties:
-    name: OGS              # Organic glass
-    fieldOfView:           # FoV of Scintillator
-        widthMm: 40.0      # X-FoV in mm
-        heightMm: 40.0     # Y-FoV in mm
-    optical:               # Optical Properties
-        scintYield: 15821  # photons per MeV
-        timeComponents:    # decay times in ns
-            neutron:
-            - {timeConstant: 3.7, yieldFraction: 0.6931}
-            - {timeConstant: 27.0, yieldFraction: 0.1485}
-            - {timeConstant: 100.0, yieldFraction: 0.1584}
+    name: OGS
+    fieldOfView:
+      widthMm: 40.0
+      heightMm: 40.0
+    optical:
+      scintYield: 15821
+      timeComponents:
+        neutron:
+        - {timeConstant: 3.7, yieldFraction: 0.6931}
+        - {timeConstant: 27.0, yieldFraction: 0.1485}
+        - {timeConstant: 100.0, yieldFraction: 0.1584}
 source:
   catalogId: AmBe</code></pre>
+          </div>
+          <div class="sim-software-logos" aria-label="ScintiPix software stack">
+            <a href="https://docs.pydantic.dev/" target="_blank" rel="noopener noreferrer" title="Visit the Pydantic website">
+              <img src="images/pydantic_logo.webp" alt="Pydantic logo" />
+            </a>
+            <a href="https://pixi.sh/" target="_blank" rel="noopener noreferrer" title="Visit the Pixi website">
+              <img src="images/pixi_logo.png" alt="Pixi logo" />
+            </a>
+            <a class="sim-software-logo-wide" href="https://geant4.web.cern.ch/" target="_blank" rel="noopener noreferrer" title="Visit the Geant4 website">
+              <img src="images/g4logo-full-500x167.png" alt="Geant4 logo" />
+            </a>
+            <a href="https://loguru.readthedocs.io/" target="_blank" rel="noopener noreferrer" title="Visit the Loguru website">
+              <img src="images/Logguru_logo.png" alt="Loguru logo" />
+            </a>
+            <a href="https://ray-optics.readthedocs.io/" target="_blank" rel="noopener noreferrer" title="Visit the RayOptics website">
+              <img src="images/RayOptics_logo.png" alt="RayOptics logo" />
+            </a>
+          </div>
         </div>
         <ul class="hermes-features">
           <li><a href="https://geant4.web.cern.ch/" target="_blank"><strong>Geant4</strong></a> follows each neutron and gamma through the scintillator</li>
-          <li><a href="https://github.com/mjhoptics/ray-optics" target="_blank"><strong>RayOptics</strong></a> traces the light through a real camera lens</li>
+          <li><a href="https://ray-optics.readthedocs.io/" target="_blank"><strong>RayOptics</strong></a> traces the light through a real camera lens</li>
           <li>Catalogs of built-in scintillators and lenses</li>
           <li>Each photon is tagged with the particle ID that created it</li>
           <li>Can be integrated with HERMES to test reconstruction algorithms</li>
