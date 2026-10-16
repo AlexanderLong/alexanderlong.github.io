@@ -13,19 +13,19 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 Open http://localhost:8000/ for the homepage, or
 http://localhost:8000/presentations.html for the talks. Use an HTTP server
-rather than opening the HTML files directly: the other pages' navigation and
-slide Markdown load with `fetch`, which needs HTTP.
+rather than opening the HTML files directly: the slide Markdown loads with
+`fetch`, which needs HTTP.
 
 ## Homepage
 
-The homepage, research, publications, talks, about, and contact pages use the Editorial
-layout with shared styles in `css/home.css` and static navigation. None requires
-Bootstrap; only the talks page uses JavaScript, to switch presentations.
-Other pages continue to use `navbar.html` and their existing
-styles. All main navigation uses the same order: Research, Publications,
+All website pages use the Editorial layout with shared styles in `css/home.css`
+and static navigation. None requires Bootstrap; only the talks page uses
+JavaScript, to switch presentations. All main navigation uses the same order: Research, Publications,
 Talks, About, Contact, and CV download. Keep the static headers in `index.html`,
-`researchExp.html`, `publications.html`, `presentations.html`, `about.html`, and
-`contact.html` consistent with `navbar.html`.
+`researchExp.html`, `publications.html`, `presentations.html`, `about.html`,
+`contact.html`, `education.html`, `awardsAndPresentations.html`, the notebook
+pages, and `404.html` consistent. `navbar.html` is retained as a legacy navigation
+fragment and is no longer loaded by these pages.
 The Editorial footers preserve access to education, awards, notes, and
 scientific resources.
 
@@ -60,6 +60,19 @@ waypoints, trail suggestions, and links work without JavaScript.
 accounts. Layout-specific styles are in `css/contact.css`. It uses local styles
 and works without JavaScript or an external icon library.
 
+## Education, awards, and notebook pages
+
+`education.html` presents the doctoral and undergraduate degrees, thesis topics,
+advisors, and doctoral thesis link. `awardsAndPresentations.html` now contains
+only honors and awards, with a link to the talk history on `presentations.html`.
+The existing awards URL and `collapseOne` fragment remain available;
+`collapseTwo` points visitors to the relocated talks.
+
+These pages share `css/secondary.css` with the GEANT4 and ROOT notebook pages,
+the code-formatting test page, and the 404 page. The notebook pages show an empty
+state until notes are published. The 404 page uses paths from the site root so
+navigation and styles also work when a missing URL has multiple path segments.
+
 ## Publications
 
 `publications.html` lists public communications, peer-reviewed papers, and
@@ -79,8 +92,11 @@ The Talks tab links to `presentations.html`, styled with `css/home.css` and
 `css/talks.css`. The dropdown lists talks with hosted slides, newest first.
 A small inline script updates the selected talk's title, event, location, and
 link; the initial presentation and history links also work without JavaScript.
-The page includes a slide keyboard guide. The full talk history remains on
-`awardsAndPresentations.html`.
+The page includes a slide keyboard guide and the full talk history at
+`presentations.html#talk-history`, grouped by year with links to each year.
+All history entries remain visible without JavaScript. Keep talk titles,
+scientific notation, venues, dates, invited status, and available slide links
+with each entry when updating the history.
 
 The ITMNR-10 talk is hosted at:
 
@@ -120,7 +136,8 @@ http://localhost:8000/talks/itmnr-10/#/17.
    and `data-location`. Move `selected` to the new option.
 4. Update the initial card's title, event, location, and link to match the first
    option so it is also useful with JavaScript disabled.
-5. Add the talk to `awardsAndPresentations.html` if desired.
+5. Add the talk to the history in `presentations.html`, updating the year links
+   and date range as needed.
 6. Preview, commit, and publish the website changes.
 
 ## Publish on GitHub Pages

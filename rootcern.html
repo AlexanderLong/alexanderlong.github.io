@@ -1,62 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alexander Long’s ROOT notes and a link to the official documentation.">
+  <meta name="author" content="Alexander Long">
+  <title>Alexander Long | ROOT notes</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/secondary.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">AL<span>.</span></span>
+      <span>Alexander Long</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="researchExp.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="presentations.html">Talks</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cv" href="images/ALongCV.pdf" download>CV &nearr;</a>
+    </nav>
+  </header>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Alexander Long </title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <div id="navbar-placeholder"></div>
-    <script>
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-    </script>
-
-    <!-- Hero Section -->
-    <section class="hero bg-dark text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4">Alex's Notes!</h1>
-        <p class="lead">I am trying to keep an active notebook on some of the ideas, programs, and issues I encounter</p>
+  <main id="main" tabindex="-1">
+    <header class="page-intro wrap">
+      <div>
+        <p class="eyebrow">Notebook / Scientific software</p>
+        <h1>ROOT notes<span>.</span></h1>
+        <p class="page-description">A place for ideas, programs, and issues I encounter in scientific computing.</p>
       </div>
+      <a class="button secondary" href="researchExp.html">Back to research &nearr;</a>
+    </header>
+
+    <section class="note-section wrap" aria-labelledby="notes-title">
+      <p class="eyebrow">The notebook</p>
+      <h2 id="notes-title">Notes to come.</h2>
+      <p>There are no published notes here yet. In the meantime, the official documentation is a useful starting point.</p>
+      <a class="text-link" href="https://root.cern.ch/">ROOT documentation &nearr;</a>
     </section>
+  </main>
 
-  <!-- Page Content -->
-  <div class="container mt-5">
-    <!-- Your page content here -->
-  </div>
-
-   
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Alexander Long 2018... Probably</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
+  <footer class="site-footer wrap">
+    <div class="footer-main">
+      <span>Alexander Long / Personal research website</span>
+      <nav aria-label="More about my work">
+        <a href="education.html">Education</a>
+        <a href="awardsAndPresentations.html">Honors &amp; awards</a>
+        <a href="images/ALongCV.pdf" download>Curriculum vitae</a>
+        <a href="publications.html">Publications</a>
+        <a href="https://github.com/along4">GitHub &nearr;</a>
+      </nav>
+    </div>
+    <details class="footer-resources">
+      <summary>Notes &amp; useful resources</summary>
+      <nav aria-label="Notes and scientific resources">
+        <a href="geant4.html">GEANT4 notes</a>
+        <a href="rootcern.html">ROOT notes</a>
+        <a href="testpage.html">Test page</a>
+        <a href="https://www.nndc.bnl.gov/">NNDC</a>
+        <a href="https://www-nds.iaea.org/">IAEA Nuclear Data Services</a>
+        <a href="http://www.jinaweb.org/">JINA-CEE</a>
+        <a href="https://root.cern.ch/">ROOT</a>
+        <a href="https://matplotlib.org/">Matplotlib</a>
+        <a href="https://geant4.cern.ch/UserDocumentation/UsersGuides/ForApplicationDeveloper/html/Introduction/introduction.html">Geant4 manual</a>
+      </nav>
+    </details>
+  </footer>
+</body>
 </html>
